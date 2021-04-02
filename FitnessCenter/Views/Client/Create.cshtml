@@ -1,0 +1,31 @@
+﻿@model FitnessCenter.Models.Client
+@{
+    ViewBag.Title = "Add client";
+}
+
+<form asp-action="Create" asp-controller="Client">
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label">FirstName</label>
+        <input type="text" asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label">LastName</label>
+        <input type="text" asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Age" class="control-label">Age</label>
+        <input type="text" asp-for="Age" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label">PhoneNumber</label>
+        <input type="text" asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CenterId" class="control-label">CenterId</label>
+        <input type="text" asp-for="CenterId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить" class="btn btn-default" />
+    </div>
+
+</form>

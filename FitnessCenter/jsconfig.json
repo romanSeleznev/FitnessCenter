@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "StudentDb": "Server=(localdb)\\MSSQLLocalDB;Database=FitnessCenter.Models.CenterContext;Trusted_Connection=True;MultipleActiveResultSets=true;Connect Timeout=15;Encrypt=False;Packet Size=4096"
+  }
+}

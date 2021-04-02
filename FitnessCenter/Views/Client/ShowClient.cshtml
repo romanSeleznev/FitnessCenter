@@ -1,0 +1,22 @@
+﻿@model IEnumerable<FitnessCenter.Models.Client>
+@{
+    ViewBag.Title = "Clients";
+}
+<a asp-action="Create">Add client</a>
+<table class="table">
+    <tr><td>id</td><td>FirstName</td><td>LastName</td><td>PhoneNumber</td><td>Age</td><td>CenterId</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ClientId</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.Age</td>
+            <td>@item.CenterId</td>
+            <th><a href="/Client/DeleteClient/@item.ClientId">Delete</a></th>
+            <th><a href="/Client/UpdateClient/@item.ClientId">Update</a></th>
+            <th></th>
+        </tr>
+    }
+</table>
